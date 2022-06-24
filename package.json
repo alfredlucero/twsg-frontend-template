@@ -1,0 +1,73 @@
+{
+  "name": "twsg-frontend-template",
+  "version": "1.0.0",
+  "description": "Twilio SendGrid Frontend Web App Template",
+  "main": "index.js",
+  "scripts": {
+    "start": "next dev",
+    "build": "next build && next export",
+    "start:prod": "next start",
+    "tsc": "tsc --noEmit",
+    "test": "jest",
+    "lint": "lint-staged",
+    "prepare": "husky install",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfredlucero/twsg-frontend-template.git"
+  },
+  "author": "alfredlucero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfredlucero/twsg-frontend-template/issues"
+  },
+  "homepage": "https://github.com/alfredlucero/twsg-frontend-template#readme",
+  "lint-staged": {
+    "*.{js,jsx,json,ts,tsx}": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "@twilio-paste/core": "^14.0.0",
+    "@twilio-paste/icons": "^8.0.2",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0",
+    "next": "^12.1.6",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/dom": "^8.14.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
+    "@types/jest": "^28.1.3",
+    "@types/node": "^18.0.0",
+    "@types/react": "^17.0.47",
+    "@types/react-redux": "^7.1.24",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
