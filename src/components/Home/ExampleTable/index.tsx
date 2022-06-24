@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface Example {
-  id: number;
-  message: string;
-}
+import { Example } from '../../../store/rtkQuery/endpoints/examplesApi';
 
 interface ExampleTableProps {
   examples: Example[];
