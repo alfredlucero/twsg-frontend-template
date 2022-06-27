@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "types": ["cypress", "node", "@testing-library/cypress"],
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "noErrorTruncation": true,
+    "allowJs": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom"],
+    "downlevelIteration": true,
+    "outDir": ""
+  },
+  "include": ["./**/*.ts"]
+}
