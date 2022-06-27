@@ -5,7 +5,6 @@ import { ExampleTable } from '../components/Home/ExampleTable';
 
 const Home: NextPage = () => {
   const { data, error, isLoading } = useGetExamplesQuery();
-  console.log('Data useGetExamplesQuery: ', data);
 
   if (isLoading) {
     return (
